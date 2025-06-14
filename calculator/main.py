@@ -13,7 +13,7 @@ def main():
 
     expression = " ".join(sys.argv[1:])
     try:
-        result = calculator.evaulate(expression)
+        result = calculator.evaluate(expression)
         to_print = render(expression, result)
         print(to_print)
     except Exception as e:
@@ -21,4 +21,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
